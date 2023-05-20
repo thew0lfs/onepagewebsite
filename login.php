@@ -1,17 +1,18 @@
 <?php
-// Check if the login form is submitted
-if (isset($_POST['login'])) {
-  // Get the submitted username and password
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Retrieve the submitted form data
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  // Validate the login credentials (this is a basic example, you should use secure authentication methods)
+  // Perform authentication logic
+  // Here you can validate the username and password against your database or any other authentication mechanism
+  // For demonstration purposes, let's assume the username is "admin" and the password is "password"
   if ($username === 'admin' && $password === 'password') {
-    // Successful login, redirect to the home page or perform any other desired actions
-    header('Location: home.php');
+    // Authentication successful, redirect to a welcome page or perform further actions
+    header('Location: welcome.php');
     exit;
   } else {
-    // Invalid login, display an error message
+    // Authentication failed, display an error message or perform any other necessary actions
     echo 'Invalid username or password';
   }
 }
