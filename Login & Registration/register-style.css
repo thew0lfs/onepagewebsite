@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Images/Reigster.jpg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(249, 249, 249, 0.5); /* Add this line to set opacity */
+    transition: all 0.3s ease; /* Add transition effect for smooth hover animation */
+}
+
+.container:hover {
+  transform: scale(1.5);
+}
+
+
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container .login-text {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+  }
+
+  .container .login-link {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #3f8d43;
+    font-size: 20px;
+  }
+  
+  .container .login-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  .container input[type=text],
+  .container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.721); /* Add this line to set opacity */
+
+  }
+  
+  .container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease; /* Add transition effect for smooth hover animation */
+    border-radius: 10px
+  }
+  
+  .container button:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Increase button size on hover */
+    background-color: white; /* Change background color to white on hover */
+    color: black; /* Change text color to black on hover */
+  }
+  
+  .container .form-group {
+    position: relative;
+  }
+  
+  .container .form-group input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.721);
+  }
+  
+  .container .form-group label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .container .form-group input:focus + label,
+  .container .form-group input:valid + label {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .container .form-group input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.721);
+    transition: all 0.3s ease; /* Add transition effect for smooth hover animation */
+  }
+  
+  .container .form-group input:hover {
+    transform: scale(1.1);
+  }
