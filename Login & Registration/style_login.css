@@ -20,7 +20,7 @@ body {
   transition: all 0.3s ease; /* Add this line for smooth transition */
 }
 .container:hover {
-  transform: scale(1.5); /* Add this line to increase the size on hover */
+  transform: scale(1.2); /* Add this line to increase the size on hover */
   transition: all 0.3s ease; /* Add this line for smooth transition */
 }
 
