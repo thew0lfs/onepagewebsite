@@ -3,12 +3,13 @@
 <head>
   <title>Registration Page</title>
   <link rel="stylesheet" type="text/css" href="register-style.css">
+  <script src="register.js"></script>
 </head>
 <body>
   <div class="container">
     <h2>Registration</h2>
     <p class="login-text">Have an existing account? <a class="login-link" href="login.html">Login here</a></p>
-    <form action=register.php" method="post">
+    <form action="register.php" method="post" onsubmit="return validatePassword();">
       <div class="form-group">
         <input type="text" id="name" name="name" required>
         <label for="name">Username</label>
@@ -22,6 +23,7 @@
       <div class="form-group">
         <input type="password" id="password" name="password" required>
         <label for="password">Password</label>
+        <span id="password-toggle" class="password-toggle" onclick="togglePasswordVisibility()">Show Password</span>
       </div>
       
       <button type="submit">Register</button>
