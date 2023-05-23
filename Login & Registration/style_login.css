@@ -87,12 +87,13 @@ transition: all 0.3s ease; /* Add this line for smooth transition */
   color: #ffffff;
   background-color: transparent;
   border: none;
-  text-decoration: underline;
   cursor: pointer;
 }
 
 .forgot-password:hover {
   color: #666;
+  text-decoration: underline;
+
 }
 
 .back-home-button {
@@ -109,4 +110,18 @@ transition: all 0.3s ease; /* Add this line for smooth transition */
 .back-home-button:hover {
   color: #ffffff;
   border-color: #ffffff; /* Add this line to change border color on hover */
+}
+
+
+.password-toggle {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  float: right;}
+
+.password-toggle:hover {
+  color: #929292;
+  text-decoration: underline;
 }
