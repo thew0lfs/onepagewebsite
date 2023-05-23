@@ -127,3 +127,14 @@ body {
   .container .form-group input:hover {
     transform: scale(1.1);
   }
+
+  .password-toggle {
+    cursor: pointer;
+    float: right;
+    color: #888;
+  }
+  
+  .password-toggle:hover {
+    text-decoration: underline;
+    color: #ccc;
+  }
