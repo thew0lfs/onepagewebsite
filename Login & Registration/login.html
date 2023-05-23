@@ -3,6 +3,7 @@
 <head>
   <title>Login Page</title>
   <link rel="stylesheet" type="text/css" href="style_login.css">
+  <script src="login.js"></script>
 </head>
 <body>
   <div class="container">
@@ -10,11 +11,12 @@
     <form>
       <p class="register-link">Not registered yet? <a href="register.html">Register</a></p>
       <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <span id="password-toggle" class="password-toggle" onclick="togglePasswordVisibility()">Show Password</span>
       <button class="login-button">Login</button>
       <button class="forgot-password" onclick="window.location.href='forget-password.html'">Forgot password?</button>
     </form>
-  <a href="../index.html" class="back-home-button">Back to Home</a>
+    <a href="../index.html" class="back-home-button">Back to Home</a>
   </div>
 </body>
 </html>
