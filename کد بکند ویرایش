@@ -1,0 +1,23 @@
+<?php
+
+// Retrieve form data
+
+$post_id = $_POST['post_id'];
+
+$title = $_POST['title'];
+
+$content = $_POST['content'];
+
+// Perform database update queries here
+
+// ...
+
+// Redirect back to post page
+
+header("Location: view_post.php?post_id=" . $post_id);
+
+exit();
+
+?>
+
+را
