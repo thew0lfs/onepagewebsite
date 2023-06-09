@@ -1,107 +1,26 @@
+
+Fatal error: Uncaught TypeError: mysqli_select_db(): Argument #1 ($mysql) must be of type mysqli, string given in C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php:9 Stack trace: #0 C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php(9): mysqli_select_db('$mysql', 'users') #1 {main} thrown in C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php on line 9
+
+
+
+
+
+
+
+
+
+
+
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Retrieve form data
-  $username = $_POST["username"];
-  $email = $_POST["email"];
-  $password = $_POST["password"];
-
-  // Validate and process the data
-  if (!empty($username) && !empty($email) && !empty($password)) {
-    // TODO: Perform additional validation and database operations here
-
-    // Display success message or redirect to a success page
-    echo "Registration successful!";
-  } else {
-    // Display error message or redirect to an error page
-    echo "Please fill in all the fields.";
-  }
-}
-
-
-
-
-// اینا مربوط به سروره لطفا بدون هماهنگی خودم تغییرش ندهید //
-
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
-
-$conn = new mysqli($servername, $username, $email , $password, $dbname);
-
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "INSERT INTO users (name , email , password ) VALUES ( '$name' , '$email' , '$password' )";
-
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-
-
-
-/*<?php
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$mysql = mysqli_connect('localhost' , 'root' , '');
 
-$conn = mysqli_connect('localhost' , 'root' , '');
+mysqli_select_db('$mysql' , 'users');
 
-mysqli_select_db('@conn' , 'users');
-
-mysqli_query('@conn' , "INSERT INTO `users`( 'id' , 'name`, `email`, `password`) VALUES ('$name','$email','$pass')");
-
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-$conn->close();
-
+mysqli_query('$mysql' , "INSERT INTO `users`(`id`, `name`, `email`, `password`) VALUES ('','$name','$email','$pass')");
 ?>
 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
