@@ -1,38 +1,22 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-  $username = $_POST['username'];
-  $password = $_POST['password'];
+  $user = $_POST['username'];
+  $pass = $_POST['password'];
 
-  $server = mysqli_connect('localhost' , 'root' , '');
+  $con = mysqli_connect('localhost' , 'root' , '');
 
+  mysqli_select_db($con , 'users');
+  
+  $result = mysqli_query($con , "SELECT * FROM 'users'  WHERE 'user' = '$user'   ");
 
-  mysqli_select_db('$sever' , 'users');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  while($row == mysqli_fetch_array($result)){
+    if ($pass == $row['password']){
+      echo "ok"
+    }
+    else {
+      echo "NO?"
+    }
 
 }
 ?>
