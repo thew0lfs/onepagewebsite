@@ -1,1 +1,3 @@
 
+
+Fatal error: Uncaught TypeError: mysqli_select_db(): Argument #1 ($mysql) must be of type mysqli, string given in C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php:69 Stack trace: #0 C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php(69): mysqli_select_db('@conn', 'users') #1 {main} thrown in C:\xampp\htdocs\onepagewebsite-main\Login & Registration\register.php on line 69
