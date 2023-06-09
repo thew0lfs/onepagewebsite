@@ -52,6 +52,30 @@ $conn->close();
 
 
 
+/*<?php
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$pass = $_POST['password'];
+
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "myDB";
+
+$conn = mysqli_connect('localhost' , 'root' , '');
+
+mysqli_select_db('@conn' , 'users');
+
+mysqli_query('@conn' , "INSERT INTO `users`( 'id' , 'name`, `email`, `password`) VALUES ('$name','$email','$pass')");
+
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+$conn->close();
+
+?>
 
 
 
