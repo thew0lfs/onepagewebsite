@@ -3,6 +3,52 @@
 
 <head>
   <title>Add Post</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ccc;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -21,7 +67,7 @@
 
     <input type="submit" name="submit" value="Add">
   </form>
-  <?php 
+  <?php
   if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
