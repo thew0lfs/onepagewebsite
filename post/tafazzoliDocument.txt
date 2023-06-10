@@ -1,0 +1,5 @@
+Post :
+Table Name = posts // Columns : id - title - image - description
+
+Comment : 
+Table Name = comments // Columns : name - comment - postId
