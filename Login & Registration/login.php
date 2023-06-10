@@ -1,6 +1,6 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
+  
   $user = $_POST['name'];
   $pass = $_POST['password'];
 
@@ -8,11 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   mysqli_select_db($con , 'users');
   
-  $result = mysqli_query($con , "SELECT * FROM  users  WHERE user = '$user'   ");
-
-  if ($row == mysqli_fetch_array($result)){
+  $result = mysqli_query($con , "SELECT * FROM  `users`  WHERE  `name` = '$user'   ");
+  
+  while ($row = mysqli_fetch_array($result)){
     if ($pass == $row['password']){
-      header("location: index.html ");
+      header("location: register.html");
     }
     else {
       echo "NO?";
