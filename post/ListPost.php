@@ -3,6 +3,55 @@
 
 <head>
   <title>My Posts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    div.overflow-x-auto {
+      overflow-x: auto;
+    }
+
+    div.overflow-x-auto table {
+      min-width: 100%;
+    }
+  </style>
+
 </head>
 
 <body>
