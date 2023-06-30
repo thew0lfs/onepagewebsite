@@ -5,19 +5,22 @@
   <title>My Posts</title>
   <style>
     body {
+      background-image: url('Login.jpg');
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
     }
 
     h1 {
+      color: #ccc;
       text-align: center;
       margin-top: 20px;
     }
 
     a {
+      
       text-decoration: none;
-      color: #333;
+      color: #ccc;
     }
 
     table {
