@@ -22,29 +22,6 @@ window.addEventListener('scroll', function() {
   progressBar.style.width = progress + '%';
 });
 
-// Fade-in Animation for Team Section
-window.addEventListener('scroll', function() {
-  const teamSection = document.getElementById('team');
-  const teamMembers = document.querySelectorAll('.team-member');
-
-  const teamSectionBottom = teamSection.offsetTop + teamSection.offsetHeight;
-
-  if (window.scrollY + window.innerHeight >= teamSectionBottom) {
-    teamSection.classList.add('fade-in');
-
-    teamMembers.forEach(function(member, index) {
-      setTimeout(function() {
-        member.classList.add('fade-in');
-      }, index * 200);
-    });
-  } else {
-    teamSection.classList.remove('fade-in');
-
-    teamMembers.forEach(function(member) {
-      member.classList.remove('fade-in');
-    });
-  }
-});
 
 // Show Scroll to Top Button
 window.addEventListener('scroll', function() {
