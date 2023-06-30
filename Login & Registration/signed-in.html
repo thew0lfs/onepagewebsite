@@ -4,21 +4,13 @@
     <title>Login was successful</title>
     <style>
       body {
-        margin: 0;
-        background-color: #9fc59c;
-      }
-
-      .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 30vh;
-        border: 2px solid green;
-        background-color: #e9e9e9;
-        border-radius: 10px;
-        margin: 20%;
-        
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
       }
 
       h1 {
@@ -32,28 +24,22 @@
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
+        margin-top: 10px;
       }
 
-      li {
-        display: inline;
-        margin-right: 10px;
-      }
-
-      li button {
-        background-color: green;
+      .button_1 {
+        background-color: rgb(11, 78, 64);
         color: white;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
-        border: #f5f5f5;
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Login was successful</h1>
-      <a class="button" href="../index.php">Back to Website</a><br>
-      <li><button class="nav-link" onclick="redirectToListPost()">Admin Panel</button></li>
-    </div>
+    <h1>Login was successful</h1>
+    <a class="button" href="../index.php">Back to Website</a>
+    <a class="button_1" href="admin-panel.php">Admin Panel</a>
   </body>
 </html>
