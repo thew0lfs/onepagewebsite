@@ -92,3 +92,7 @@ window.addEventListener("resize", function() {
 function redirectToLogin() {
   window.location.href = 'Login & Registration/login.html'; // Redirect to login.html
 }
+function redirectToListPost() {
+  window.location.href = 'post/ListPost.php'; // Redirect to login.html
+}
+
