@@ -69,28 +69,6 @@
     </section>
 
 
-    <section id="team">
-      <div class="container">
-        <h2>Our Team</h2>
-        <div class="team-group">
-          <div class="team-member">
-            <img src="Images/S1mple.jpg" alt="Team Member 1">
-            <h3>s1mple</h3>
-            <p>Oleksandr Olehovych Kostyliev[a] (born 2 October 1997), better known as s1mple, is a Ukrainian
-              professional Counter-Strike: Global Offensive player for Natus Vincere.[2] He is considered to be one of
-              the best players in Global Offensive history.</p>
-          </div>
-          <div class="team-member">
-            <img src="Images/Dev1ce.jpg" alt="Team Member 2">
-            <h3>dev1ce</h3>
-            <p>Nicolai Hvilshøj Reedtz, better known as dev1ce, is a Danish professional Counter-Strike: Global
-              Offensive player for Astralis. On his first stint in Astralis, he became the first to win 4 majors in
-              CS:GO, and to win 3 majors</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section>
       <div class="container">
         <div class="section-content">
