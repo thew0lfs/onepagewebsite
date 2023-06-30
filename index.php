@@ -26,7 +26,7 @@
           <button class="nav-link" data-target="#social">Social</button>
           <button class="nav-link" data-target="#contact">Contact</button>
           <li><button class="nav-link" onclick="redirectToLogin()">Login</button></li>
-          <li><button class="nav-link" onclick="redirectToListPost()">Admin Panel</button></li>
+          
         </ul>
       </nav>
     </header>
