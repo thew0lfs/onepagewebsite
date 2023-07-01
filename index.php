@@ -21,12 +21,11 @@
           <img src="Images/Logo.png" alt="Logo">
           <button class="nav-link" data-target="#hero">Home</button>
           <button class="nav-link" data-target="#about">About</button>
-          <button class="nav-link" data-target="#team">Team</button>
           <button class="nav-link" data-target="#features">Features</button>
           <button class="nav-link" data-target="#social">Social</button>
           <button class="nav-link" data-target="#contact">Contact</button>
           <li><button class="nav-link" onclick="redirectToLogin()">Login</button></li>
-          
+
         </ul>
       </nav>
     </header>
@@ -48,6 +47,7 @@
           varius turpis. Nulla tincidunt eu ipsum nec pellentesque.</p>
       </div>
     </section>
+
 
     <section>
       <div class="container">
