@@ -166,7 +166,7 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <h2>Contact Us</h2>
-        <form>
+        <form action="contact.php" method="post">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" required></textarea>
