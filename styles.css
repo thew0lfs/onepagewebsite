@@ -363,49 +363,6 @@ footer {
     display: inline-block;
   }
 
-/* Team Section Styles */
-
-
-  #team {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-  }
-
-  .team-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-
-  .team-member {
-    width: calc(50% - 20px);
-    text-align: center;
-  }
-
-  .team-member img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-
-  .team-member h3 {
-    margin-bottom: 10px;
-  }
-
-  .team-member p {
-    color: #555;
-  }
-
-  .team-member img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-bottom: 10px;
-    border-radius: 3%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-
-  }
 
   section {
     padding: 60px 0;
@@ -483,12 +440,7 @@ footer {
     font-size: 16px;
   }
 
-  #team {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-/*     opacity: 0; 
- */    transition: opacity 0.5s; 
-  }
+
 
   .images-section {
     text-align: center; 
@@ -519,34 +471,6 @@ footer {
     opacity: 0.5; 
   }
   
-  .team-member {
-    transition: transform 0.3s ease;
-  }
-  
-  .team-member:hover {
-    transform: scale(1.2);
-  }
-  
-  .team-member:hover .team-member-info {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  .team-member {
-  transition: transform 0.3s ease;
-  transform-origin: center center;
-}
-
-.team-member:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.team-member:hover .team-member-info {
-  font-size: 1.2em;
-  font-weight: bold;
-  z-index: 2;
-}
 
 
 /* Featue Section */
